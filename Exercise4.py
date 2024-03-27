@@ -8,4 +8,4 @@ width = float(input('Length of width in feet. '))
 
 area = (length * width) / 43560
 
-print(f'With the inputed length {length} feet, and width {width}, the area of the field in acres is {area}. ')
+print(f'With the inputed length {length} feet, and width {width}, the area of the field in acres is {area}.')
