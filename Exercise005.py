@@ -12,6 +12,6 @@ sign and always displays exactly two decimal places.
 small = int(input('Number of containers holding one liter or less. '))
 large = int(input('Number of containers holding more than one liter. '))
 
-refunded = float(small) * 0.10 + float(large) * 0.25
+refunded = small * 0.10 + large * 0.25
 
 print(f'The amount refunded was ${"{:.2f}".format(refunded)}.')
