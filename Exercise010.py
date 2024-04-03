@@ -11,8 +11,6 @@ compute and display:
 '''
 
 import math
-
-
 a = int(input('Enter number a: '))
 b = int(input('Enter number b: '))
 
@@ -24,4 +22,10 @@ rem = a % b
 log = math.log10(a)
 expo = a ** b
 
-print(f'The sum of a and b is {sum}. \nThe difference when b is subtracted from a is {diff}. \nThe product of a and b is {prod}. \nThe quotient when a is divided by b is {div}. \nThe remainder when a is divided by b is {rem}. \nThe Log10 of a is {log}. \nThe answer for a^b is {expo}.')
+print(f'\nThe sum of a and b is {sum}.\n'
+    f'The difference when b is subtracted from a is {diff}. \n'
+    f'The product of a and b is {prod}. \n'
+    f'The quotient when a is divided by b is {div}. \n'
+    f'The remainder when a is divided by b is {rem}. \n'
+    f'The Log10 of a is {log}. \n'
+    f'The answer for a^b is {expo}.')
