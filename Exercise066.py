@@ -11,7 +11,7 @@ entered by the user will always be a valid letter grade or a blank line.
 '''
 
 
-grade_points = {
+gradePoints = {
     "A": 4.0,
     "A-": 3.7,
     "B+": 3.3,
@@ -27,19 +27,19 @@ grade_points = {
 
 print("Enter the letter grades one by one. Enter a blank line to finish.")
 
-total_points = 0
+totalPoints = 0
 count = 0
 
 while True:
     grade = input("Enter a letter grade: ")
     if grade == "":
         break
-    if grade in grade_points:
-        total_points += grade_points[grade]
+    if grade in gradePoints:
+        totalPoints += gradePoints[grade]
         count += 1
 
 if count > 0:
-    gpa = total_points / count
+    gpa = totalPoints / count
     print(f"The grade point average is {gpa:.1f}")
 else:
     print("No grades were entered.")

@@ -9,3 +9,31 @@ indicate that there are no more guests in the group. Then your program should di
 the admission cost for the group with an appropriate message. The cost should be
 displayed using two decimal places.
 '''
+
+def calculateAdmissionCost(age):
+    if age <= 2:
+        return 0.00
+    elif 3 <= age <= 12:
+        return 14.00
+    elif age >= 65:
+        return 18.00
+    else:
+        return 23.00
+
+
+print("Enter the ages of the guests one by one. Enter a blank line to finish.")
+
+totalCost = 0.0
+
+while True:
+    ageInput = input("Enter the age of the guest: ")
+    if ageInput == "":
+        break
+    try:
+        age = int(ageInput)
+        totalCost += calculateAdmissionCost(age)
+    except ValueError:
+        print("Invalid input. Please enter a valid age.")
+
+print(f"The total admission cost for the group is: ${totalCost:.2f}")
+
