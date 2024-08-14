@@ -20,20 +20,15 @@ abc = 'abcdefghijklmnopqrstuvwxyz'
 for _ in range(len(string1)):
     if string1[_] in string1Count:
         string1Count[string1[_]] += 1
-    else:
-        pass
 
 for _ in range(len(string2)):
     if string2[_] in string2Count:
         string2Count[string2[_]] += 1
-    else:
-        pass
+
 
 for _ in range(len(abc)):
     if string1Count[abc[_]] != string2Count[abc[_]]:
         print('Not an anagram.')
         exit()
-    else:
-        pass
 
 print('It is an anagram!')
