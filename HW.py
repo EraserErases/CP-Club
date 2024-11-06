@@ -15,20 +15,16 @@ Output:
 Fibonacci series of 5 numbers is : 0 1 1 2 3
 '''
 
-rep = int(input('Number of Repitions: '))
+def fibnum(n):
+    if n in (0, 1, 2):
+        return 0 if n == 0 else 1 
+    else:
+        return (fibnum(n-1) + fibnum(n-2))
 
-FibNum = [0, 1]
-output = ''
+def fibseq(rep):
+    for _ in range(rep):
+        print(fibnum(_), end=' ')
 
-if rep < 2:
-    print('Input Number too small.')
-    exit()
+num = 9
 
-for _ in range(rep - 2):
-    FibNum.append(FibNum[_] + FibNum[_ + 1])
-
-for _ in range(len(FibNum)):
-    output += str(FibNum[_]) + ' '
-
-
-print(f'Fibonacci series of {len(FibNum)} numbers is : {output}')
+fibseq(num)
