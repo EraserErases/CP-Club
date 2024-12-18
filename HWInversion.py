@@ -9,8 +9,8 @@ def inversions(arr):
 
     return count
 
-arr1 = [1, 2, 3, 4, 5]
-arr2 = [10, 10, 10]
+arr1 = [1, 2, 4, 3]
+arr2 = [10, 10, 10, 8]
 
 print(inversions(arr1))
 print(inversions(arr2))
